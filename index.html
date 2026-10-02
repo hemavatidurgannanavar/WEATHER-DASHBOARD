@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="weather-dashboard">
+
+        <h1>🌤 Weather Dashboard</h1>
+
+        <!-- City Search -->
+        <section class="search-section">
+            <label for="cityInput">Enter City Name</label>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="e.g. Mysuru"
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn" type="button">
+                    Search
+                </button>
+            </div>
+        </section>
+
+        <!-- Error Message -->
+        <p id="errorMessage" class="error-message"></p>
+
+        <!-- Loading Message -->
+        <p id="loadingMessage" class="loading-message"></p>
+
+        <!-- Weather Information -->
+        <section id="weatherContainer" class="weather-container">
+
+            <h2 id="cityName">City Name</h2>
+
+            <div class="weather-cards">
+
+                <!-- Temperature -->
+                <div class="weather-card">
+                    <span class="weather-icon">🌡️</span>
+                    <h3>Temperature</h3>
+                    <p>
+                        <span id="temperature">--</span> °C
+                    </p>
+                </div>
+
+                <!-- Humidity -->
+                <div class="weather-card">
+                    <span class="weather-icon">💧</span>
+                    <h3>Humidity</h3>
+                    <p>
+                        <span id="humidity">--</span> %
+                    </p>
+                </div>
+
+                <!-- Wind Speed -->
+                <div class="weather-card">
+                    <span class="weather-icon">💨</span>
+                    <h3>Wind Speed</h3>
+                    <p>
+                        <span id="windSpeed">--</span> km/h
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
